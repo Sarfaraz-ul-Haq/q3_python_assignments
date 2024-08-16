@@ -24,12 +24,12 @@ This is a Python implementation of the High-Low game. The game involves guessing
 
    ```bash
    git clone <repository_url>
-   cd high-low-game
+   cd high_low_game
 
    ```
 
 2. Run the Game
 
    ```bash
-   python high_low_game.py
+   python main.py
    ```
