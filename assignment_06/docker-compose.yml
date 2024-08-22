@@ -1,0 +1,8 @@
+version: '3'
+services:
+  my_python_service:
+    build: .
+    volumes:
+      - C:\Users\Sarfaraz\Desktop\code\python\q3_python_assignments\assignment_06
+    ports:
+      - "8000:8000"
