@@ -6,6 +6,18 @@ def is_even_or_odd(num: int) -> str:
         return "odd"
 
 
+# function to check whether a given number is prime or not
+def is_prime(num: int) -> bool:
+    if num < 2:
+        return False
+
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+        else:
+            return True
+
+
 # declare variables
 user_name: str
 favorite_numbers: list[int] = []
@@ -37,3 +49,10 @@ for number in favorite_numbers:
 # ___________________________________________________________________
 
 print(f"\nAmazing! The sum of your favorite numbers is: {sum(favorite_numbers)}")
+
+# ___________________________________________________________________
+
+if is_prime(sum(favorite_numbers)):
+    print(f"Wow, {sum(favorite_numbers)} is a prime number")
+else:
+    print(f"{sum(favorite_numbers)} is not a prime number")
