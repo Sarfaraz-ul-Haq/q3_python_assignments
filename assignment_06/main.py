@@ -1,8 +1,9 @@
+from typing import List
 from typing import Tuple
 
 
 def manage_student_database():
-    student_list: list[Tuple[int, str]] = []
+    student_list: List[Tuple[int, str]] = []
     # id: list[int] = list(range(1, len(student_list) + 1))
 
     while True:
@@ -40,5 +41,6 @@ def manage_student_database():
 
 manage_student_database()
 
+# Todo
 # Dont' append if the user enters without typing anything
 # It should exclude spaces between names also
