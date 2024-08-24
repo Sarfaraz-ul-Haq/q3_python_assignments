@@ -3,7 +3,7 @@ from typing import Tuple
 
 
 def manage_student_database():
-    student_list: List[Tuple[int, str]] = []
+    student_list: List[str] = []
     # id: list[int] = list(range(1, len(student_list) + 1))
 
     while True:
@@ -13,6 +13,10 @@ def manage_student_database():
 
         if student_name == "stop":
             break
+
+        if student_name.strip() == "":
+            print("Empty name entered")
+            continue
 
         if student_name in student_list:
             print("The name is already in the list")
