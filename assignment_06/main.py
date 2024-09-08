@@ -14,7 +14,7 @@ def manage_student_database():
         )
 
         # while loop will break when the user enters "stop"
-        if student_name == "stop":
+        if student_name.lower() == "stop":
             break
 
         # if user enters empty string then the rest of the code will not work and loop will start again
